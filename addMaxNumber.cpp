@@ -40,10 +40,10 @@ int main(){
 		}
 	}
 	
-	for(int i = cSize-1;i>=0;i--){
+	for(int i = 0;i<cSize;i++){
 		int temp1 = result[i]%10;
 		int temp2 = result[i]/10;
-		result[i-1] = result[i-1] + temp2;
+		result[i+1] = result[i+1] + temp2;
 		result[i] = temp1;
 	}
 	
